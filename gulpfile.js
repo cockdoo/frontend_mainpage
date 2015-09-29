@@ -76,13 +76,15 @@ gulp.task('serve', function() {
 		.pipe(webserver({
 			livereload: true,
 			directoryListening: true,
-			open: true
+			open: true,
+			port: 1111
 		}));
 });
 
 //browserSync
 gulp.task('browser-sync', function() {
 	browserSync({
+		port: 1234,
 		server: {
 			baseDir: paths.dest
 		},

@@ -2,3 +2,17 @@
   position: relative;
   height: 100%;
   background-color: #aaffff; }
+
+.gigapan {
+  min-height: 100%;
+  margin-bottom: 60px;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  overflow: hidden; }
+  .gigapan iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }

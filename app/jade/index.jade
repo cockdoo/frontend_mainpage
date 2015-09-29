@@ -1,15 +1,28 @@
-doctype
+qdoctype
 
 html
-	head
-		link(rel='stylesheet', type='text/css', href='styles/reset.css')
-		link(rel='stylesheet', type='text/css', href='styles/index.css')
-		link(rel='stylesheet', type='text/css', href='styles/top.css')
-		link(rel='stylesheet', type='text/css', href='styles/information.css')
-		link(rel='stylesheet', type='text/css', href='styles/person.css')
-	body
-		div.container
-			section#top トップの中身
-			section#information インフォメーションの中身
-			section#person パーソンの中身
+  head
+    link(rel='stylesheet', type='text/css', href='styles/reset.css')
+    link(rel='stylesheet', type='text/css', href='styles/index.css')
+    link(rel='stylesheet', type='text/css', href='styles/top.css')
+    link(rel='stylesheet', type='text/css', href='styles/information.css')
+    link(rel='stylesheet', type='text/css', href='styles/person.css')
+  body
+    div.container
+      section#top
+        a
+          img(src="/images/top_logo.png")
+        ul
+          li
+            a(href="") よこめとは？
+          li
+            a(href="") よこめがおいしい理由
+          li
+            a(href="") よこめを食べてみる
+        .gigapan
+          iframe(src="http://www.gigapan.com/embeds/5we8Fv9bl5k/", frameborder="false")
+        a
+          img(src="/images/top_Path1.png")
+      section#information インフォメーションの中身
+      section#person パーソンの中身
 //- 作成したコードを該当するセクションの下に貼付ける(インデントを一つあげる)

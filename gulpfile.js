@@ -9,6 +9,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 //cssを最小化する
 var cssmin = require('gulp-cssmin');
+var cssconcat = require('gulp-concat');
 //CSSプロパティ並び順整理
 var csscomb = require('gulp-csscomb');
 //ファイルのリネーム
@@ -105,7 +106,7 @@ gulp.task('imagemin', function() {
 		.pipe(plumber({
 		  errorHandler: notify.onError("Error: <%= error.message %>")
 		 }))
-		.pipe(changed('app/images'))
+		// .pipe(changed('app/images'))
 		.pipe(imagemin({
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
@@ -143,6 +144,7 @@ gulp.task('cssmin',function() {
 	.pipe(csscomb())
 	.pipe(cssmin())
 	.pipe(rename({suffix: '.min'}))
+	.pipe(cssconcat("last.css"))
 	.pipe(gulp.dest('dist/styles/cssmin'));
 });
 
@@ -163,4 +165,4 @@ gulp.task('uglify-lib', function() {
 });
 
 //gulp本来のタスクを登録する
-gulp.task('default', ['watch','serve','browser-sync']);
+gulp.task('default', ['watch','serve','browser-sync', 'imagemin']);

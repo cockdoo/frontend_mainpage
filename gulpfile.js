@@ -103,7 +103,7 @@ gulp.task('imagemin', function() {
 		.pipe(plumber({
 		  errorHandler: notify.onError("Error: <%= error.message %>")
 		 }))
-		.pipe(changed('app/images'))
+		// .pipe(changed('app/images'))
 		.pipe(imagemin({
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}],
@@ -161,4 +161,4 @@ gulp.task('uglify-lib', function() {
 });
 
 //gulp本来のタスクを登録する
-gulp.task('default', ['watch','serve','browser-sync']);
+gulp.task('default', ['watch','serve','browser-sync', 'imagemin']);

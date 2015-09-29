@@ -9,6 +9,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 //cssを最小化する
 var cssmin = require('gulp-cssmin');
+var cssconcat = require('gulp-concat');
 //CSSプロパティ並び順整理
 var csscomb = require('gulp-csscomb');
 //ファイルのリネーム
@@ -141,6 +142,7 @@ gulp.task('cssmin',function() {
 	.pipe(csscomb())
 	.pipe(cssmin())
 	.pipe(rename({suffix: '.min'}))
+	.pipe(cssconcat("last.css"))
 	.pipe(gulp.dest('dist/styles/cssmin'));
 });
 

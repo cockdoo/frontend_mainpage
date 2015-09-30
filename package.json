@@ -29,5 +29,8 @@
     "gulp-watch": "^4.3.5",
     "gulp-webserver": "^0.9.1",
     "imagemin-pngquant": "^4.2.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.0"
   }
 }

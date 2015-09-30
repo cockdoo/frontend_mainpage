@@ -8,20 +8,20 @@
     color: black;
     font-size: 48px;
     padding: 80px;
-    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",sans-serif; }
+    font-family: "ＭＳ 明朝",serif; }
   #person .person .face {
     display: flex;
     justify-content: center; }
     #person .person .face section {
       margin: 10px;
-      border-radius: 5px;
       padding: 15px;
-      text-align: center; }
+      text-align: center;
+      font-family: "ＭＳ 明朝",serif; }
   #person .person .face2 {
     display: flex;
     justify-content: center; }
     #person .person .face2 section {
       margin: 10px;
-      border-radius: 5px;
       padding: 15px;
-      text-align: center; }
+      text-align: center;
+      font-family: "ＭＳ 明朝",serif; }

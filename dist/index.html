@@ -1,60 +1,140 @@
-<qdoctype></qdoctype>
+<!DOCTYPE html>
 <html>
 
-<head>
-  <link rel="stylesheet" type="text/css" href="styles/reset.css" />
-  <link rel="stylesheet" type="text/css" href="styles/index.css" />
-  <link rel="stylesheet" type="text/css" href="styles/top.css" />
-  <link rel="stylesheet" type="text/css" href="styles/information.css" />
-  <link rel="stylesheet" type="text/css" href="styles/person.css" />
-</head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/top.css">
+    <link rel="stylesheet" type="text/css" href="styles/information.css">
+    <link rel="stylesheet" type="text/css" href="styles/person.css">
+    <link rel="stylesheet" type="text/css" href="styles/timeline.css">
+    <script type="javascript" src="js/min/index.min.js"></script>
+    <script type="javascript" src="js/min/jquery-2.1.4.min.js"></script>
+  </head>
 
-<body>
-  <div class="container">
-    <section id="header">
-      <header>
-        <a><img src="/images/top_logo2.png" /></a>
-        <nav>
-          <ul>
-            <li><a href="">よこめとは？</a></li>
-            <li><a href="">よこめがおいしい理由</a></li>
-            <li><a href="">よこめを食べてみる</a></li>
-          </ul>
-        </nav>
-      </header>
-    </section>
-    <section id="top">
-      <div class="gigapan">
-        <iframe src="http://www.gigapan.com/embeds/nzYYxKiHJPU/" frameborder="false"></iframe>
-      </div>
-      <a><img src="/images/top_Path1.png" /></a>
-    </section>
-    <section id="information">
-      <div class="itext">
-        <p>よこめとは、</p>
-        <p>新潟県魚沼市横根集落が</p>
-        <p>まちをあげて育ているお米です。</p>
-        <div class="bgr"></div>
-      </div>
-      <div class="yokoneVR">
-        <div class="map"><img src="images/nigata_map.png" /></div>
-        <div class="yokone">
-          <p>新潟県魚沼市横根集落</p>
-        </div><img src="images/VR.png" class="VR" /></div>
-      <div class="scroll">
-        <a href="#person"><img src="images/scroll.svg" /></a>
-      </div>
-    </section>
-    <section id="person">パーソンの中身</section>
-    <section id="footer">
-      <div class="copy">
-        <p>Copyright 2015 Shiori.Inc. All Rights Reserved.</p>
-      </div>
-    </section>
-    <script src="js/min/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/min/index.min.js"></script>
-    <section id="person">パーソンの中身</section>
-  </div>
-</body>
+  <body>
+    <div class="container">
+      <section id="header">
+        <header>
+          <a><img src="/images/top_logo2.png"></a>
+          <nav>
+            <ul>
+              <li><a href="">よこめとは？</a></li>
+              <li><a href="">よこめがおいしい理由</a></li>
+              <li><a href="">よこめを食べてみる</a></li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+      <section id="top">
+        <div class="gigapan">
+          <iframe src="http://www.gigapan.com/embeds/nzYYxKiHJPU/" frameborder="false"></iframe>
+        </div>
+        <a><img src="/images/top_Path1.png"></a>
+      </section>
+      <section id="information">
+        <div class="itext">
+          <p>よこめとは、</p>
+          <p>新潟県魚沼市横根集落が</p>
+          <p>まちをあげて育ているお米です。</p>
+          <div class="bgr"></div>
+        </div>
+        <div class="yokoneVR">
+          <div class="map"><img src="images/nigata_map.png"></div>
+          <div class="yokone">
+            <p>新潟県魚沼市横根集落</p>
+          </div><img src="images/VR.png" class="VR"></div>
+        <div class="scroll">
+          <a href="#person"><img src="images/scroll.svg"></a>
+        </div>
+      </section>
+      <section id="person">パーソンの中身</section>
+      <section id="timeline">
+        <div class="tl-inner">
+          <h1 class="tl-header">よこめのようす</h1>
+          <div class="recent">
+            <h2 class="r-header">よこめの今</h2><img src="images/tanbo.jpg" class="r-photo">
+            <div class="r-photo-footer">
+              <div class="date">2015/09/23 12:13</div>
+              <div class="good-box"><img src="" class="good-icon"><span class="good-text">良い稲！ 20</span></div>
+            </div>
+            <div class="post-box">
+              <div class="post-heading"><span class="post-title">稲が実ってきました！</span><img src="images/post-icon.png" class="post-icon"><span class="post-name">佐藤大河</span></div>
+              <p class="post-content">8月も終わり、少しずつ寒くなってきました。皆さんいかがお過ごしでしょうか。横根の稲はじわじわと実りはじめました。無事、美味しいお米がみなさんのもとに届くことを願っております。</p>
+            </div>
+            <div class="comment-box">
+              <div class="commnet-heading">コメント一覧</div>
+              <div class="commentBtn-box">
+                <p class="commentBtn">コメントする</p>
+              </div>
+              <div id="commentbox">
+                <div class="comment_closeBtn">×</div>
+                <p>住んでいる場所</p>
+                <select name="pref_id">
+                  <option value="0">北海道</option>
+                  <option value="1">青森県</option>
+                  <option value="2">岩手県</option>
+                  <option value="3">宮城県</option>
+                  <option value="4">秋田県</option>
+                  <option value="5">山形県</option>
+                  <option value="6">福島県</option>
+                  <option value="7">茨城県</option>
+                  <option value="8">栃木県</option>
+                  <option value="9">群馬県</option>
+                  <option value="10">埼玉県</option>
+                  <option value="11">千葉県</option>
+                  <option value="12">東京都</option>
+                  <option value="13">神奈川県</option>
+                  <option value="14">新潟県</option>
+                  <option value="15">富山県</option>
+                  <option value="16">石川県</option>
+                  <option value="17">福井県</option>
+                  <option value="18">山梨県</option>
+                  <option value="19">長野県</option>
+                  <option value="20">岐阜県</option>
+                  <option value="21">静岡県</option>
+                  <option value="22">愛知県</option>
+                  <option value="23">三重県</option>
+                  <option value="24">滋賀県</option>
+                  <option value="25">京都府</option>
+                  <option value="26">大阪府</option>
+                  <option value="27">兵庫県</option>
+                  <option value="28">奈良県</option>
+                  <option value="29">和歌山県</option>
+                  <option value="30">鳥取県</option>
+                  <option value="31">島根県</option>
+                  <option value="32">岡山県</option>
+                  <option value="33">広島県</option>
+                  <option value="34">山口県</option>
+                  <option value="35">徳島県</option>
+                  <option value="36">香川県</option>
+                  <option value="37">愛媛県</option>
+                  <option value="38">高知県</option>
+                  <option value="39">福岡県</option>
+                  <option value="40">佐賀県</option>
+                  <option value="41">長崎県</option>
+                  <option value="42">熊本県</option>
+                  <option value="43">大分県</option>
+                  <option value="44">宮崎県</option>
+                  <option value="45">鹿児島県</option>
+                  <option value="46">沖縄県</option>
+                </select>
+                <p>コメント</p>
+                <textarea cols="40" rows="10"></textarea>
+                <input type="submit" value="送信">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="copy">
+          <p>Copyright 2015 Shiori.Inc. All Rights Reserved.</p>
+        </div>
+      </section>
+      <script src="js/min/jquery-2.1.4.min.js"></script>
+      <script type="text/javascript" src="js/min/index.min.js"></script>
+    </div>
+  </body>
 
 </html>

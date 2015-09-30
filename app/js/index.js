@@ -7,14 +7,9 @@ $(function() {
   yokoneVR.hide();
   $(window).scroll(function () {
     if ($(this).scrollTop() > a.height() ) {
-      // setTimeout(function(){
-        console.log("A");
       itext.fadeOut();
       yokoneVR.fadeIn();
-    // },3000);
-    return false;
     } else {
-      console.log("B");
         itext.fadeIn();
         yokoneVR.fadeOut();
     }

@@ -7,9 +7,42 @@ html
 		link(rel='stylesheet', type='text/css', href='styles/top.css')
 		link(rel='stylesheet', type='text/css', href='styles/information.css')
 		link(rel='stylesheet', type='text/css', href='styles/person.css')
+		link(rel='stylesheet', type='text/css', href='styles/timeline.css')
 	body
 		div.container
 			section#top トップの中身
 			section#information インフォメーションの中身
 			section#person パーソンの中身
-//- 作成したコードを該当するセクションの下に貼付ける(インデントを一つあげる)
+			section#timeline
+				div.tl-inner
+					h1.tl-header よこめのようす
+					div.recent
+						h2.r-header よこめの今
+						img.r-photo(src="images/tanbo.jpg")
+						div.r-photo-footer
+							div.date 2015/09/23 12:13
+							div.good-box
+								img.good-icon(src="")
+								span.good-text 良い稲！ 20
+						div.post-box
+							div.post-heading
+								span.post-title 稲が実ってきました！
+								img.post-icon(src="images/post-icon.png")
+								span.post-name 佐藤 大河
+							p.post-content 8月も終わり、少しずつ寒くなってきました。皆さんいかがお過ごしでしょうか。横根の稲はじわじわと実りはじめました。無事、美味しいお米がみなさんのもとに届くことを願っております。
+						div.comment-header
+							h3.commnet-heading コメント一覧
+							div.commentBtn-box
+								//- img.post-icon(src="")
+								p.commentBtn コメントする
+						div.comment-inner
+							- for val, index in ['福井県のお馬さん', '佐藤 大河', '福井県のお馬さん']
+								div.comment-block
+									div.head
+										img.icon(src="images/post-icon.png")
+										p.name #{val}
+									p.comment 8月も終わり、少しずつ寒くなってきました。皆さんいかがお過ごしでしょうか。横根の稲はじわじわと実りはじめました。無事、美味しいお米がみなさんのもとに届くことを願っております。
+						div.comment-footer
+							a(href="") コメントをもっとみる(4)
+							
+

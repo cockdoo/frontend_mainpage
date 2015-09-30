@@ -71,8 +71,6 @@
           line-height: 1.4em;
           border-bottom: dashed thin #777;
           padding-bottom: 20px; }
-        #timeline .recent .comment-inner .comment-block .comment:first-child {
-          background: red; }
     #timeline .recent .comment-footer {
       margin-top: 10px;
       text-align: right;

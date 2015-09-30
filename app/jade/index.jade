@@ -1,15 +1,36 @@
 doctype
 
 html
-	head
-		link(rel='stylesheet', type='text/css', href='styles/reset.css')
-		link(rel='stylesheet', type='text/css', href='styles/index.css')
-		link(rel='stylesheet', type='text/css', href='styles/top.css')
-		link(rel='stylesheet', type='text/css', href='styles/information.css')
-		link(rel='stylesheet', type='text/css', href='styles/person.css')
-	body
-		div.container
-			section#top トップの中身
-			section#information インフォメーションの中身
-			section#person パーソンの中身
+  head
+    link(rel='stylesheet', type='text/css', href='styles/reset.css')
+    link(rel='stylesheet', type='text/css', href='styles/index.css')
+    link(rel='stylesheet', type='text/css', href='styles/top.css')
+    link(rel='stylesheet', type='text/css', href='styles/information.css')
+    link(rel='stylesheet', type='text/css', href='styles/person.css')
+  body
+    div.container
+      section#top トップの中身
+      section#information
+        .itext
+          p よこめとは、
+          p 新潟県魚沼市横根集落が
+          p まちをあげて育ているお米です。
+          .bgr
+        .yokoneVR
+          .map
+            img(src="images/nigata_map.png")
+          .yokone
+            p 新潟県魚沼市横根集落
+          img(src="images/VR.png" class="VR")
+        .scroll
+          a(href="#person")
+            img(src="images/scroll.svg")
+      section#person パーソンの中身
+      section#footer
+        .copy
+          p Copyright 2015 Shiori.Inc. All Rights Reserved.
+      //- JS
+      script(src="js/min/jquery-2.1.4.min.js")
+      script(type="text/javascript" src="js/min/index.min.js")
+
 //- 作成したコードを該当するセクションの下に貼付ける(インデントを一つあげる)

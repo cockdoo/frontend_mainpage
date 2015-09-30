@@ -1,0 +1,100 @@
+#timeline {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  color: #404040; }
+  #timeline .tl-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 50px; }
+  #timeline .tl-header {
+    margin: 100px 0;
+    text-align: center;
+    font-size: 26px; }
+  #timeline .recent {
+    width: 100%;
+    padding-bottom: 40px; }
+    #timeline .recent h2 {
+      font-size: 18px; }
+    #timeline .recent .r-photo {
+      width: 100%;
+      margin-top: 20px; }
+    #timeline .recent .r-photo-footer {
+      margin-top: 5px;
+      font-size: 16px;
+      display: -webkit-flex;
+      display: flex;
+      padding: 0 5px; }
+      #timeline .recent .r-photo-footer .date {
+        -webkit-flex: auto;
+        flex: auto; }
+    #timeline .recent .post-box {
+      margin-top: 20px; }
+      #timeline .recent .post-box .post-heading {
+        height: 40px;
+        vertical-align: middle; }
+        #timeline .recent .post-box .post-heading .post-title {
+          font-size: 18px;
+          font-weight: bold; }
+        #timeline .recent .post-box .post-heading .post-icon {
+          margin-left: 20px;
+          width: 25px; }
+        #timeline .recent .post-box .post-heading .post-name {
+          margin-left: 10px; }
+      #timeline .recent .post-box .post-content {
+        font-size: 14px;
+        line-height: 1.2em;
+        margin-top: 10px; }
+    #timeline .recent .comment-header {
+      margin-top: 40px;
+      display: -webkit-flex;
+      display: flex; }
+      #timeline .recent .comment-header .commnet-heading {
+        -webkit-flex: auto;
+        flex: auto; }
+      #timeline .recent .comment-header .commentBtn-box .commentBtn {
+        font-size: 14px; }
+    #timeline .recent .comment-inner {
+      margin-top: 20px; }
+      #timeline .recent .comment-inner .comment-block {
+        margin-top: 20px; }
+        #timeline .recent .comment-inner .comment-block .head .icon {
+          width: 25px; }
+        #timeline .recent .comment-inner .comment-block .head .name {
+          display: inline-block;
+          line-height: 25px;
+          overflow: hidden;
+          margin-left: 5px; }
+        #timeline .recent .comment-inner .comment-block .comment {
+          font-size: 12px;
+          margin-top: 10px;
+          line-height: 1.4em;
+          border-bottom: dashed thin #777;
+          padding-bottom: 20px; }
+        #timeline .recent .comment-inner .comment-block .comment:first-child {
+          background: red; }
+    #timeline .recent .comment-footer {
+      margin-top: 10px;
+      text-align: right;
+      font-size: 12px; }
+  #timeline .this-year .years {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    margin-top: 30px; }
+    #timeline .this-year .years li {
+      list-style: none;
+      -webkit-flex: auto;
+      flex: auto;
+      text-align: center;
+      line-height: 30px;
+      color: #888;
+      margin: 0 70px; }
+    #timeline .this-year .years .selected {
+      font-size: 18px;
+      font-weight: bold;
+      color: #404040;
+      border-bottom: 1px solid #404040; }
+  #timeline .this-year .tree {
+    height: 100px; }

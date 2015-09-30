@@ -3,10 +3,10 @@ $(function() {
   var b = $('#information');
   var yokoneVR = $('.yokoneVR');
   var itext = $('.itext');
-  //スクロールしたら文字が消えてVRが出るやつ
   yokoneVR.hide();
   $(window).scroll(function () {
-    if ($(this).scrollTop() > a.height() ) {
+  //スクロールしたら文字が消えてVRが出るやつ
+    if ($(this).scrollTop() > a.height()) {
       itext.fadeOut();
       yokoneVR.fadeIn();
     } else {

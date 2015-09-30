@@ -1,0 +1,122 @@
+
+#timeline {
+	position: relative;
+	height: 100%;
+	background-color: #fff;
+
+	.tl-inner {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 0 50px;
+	}
+
+	.tl-header {
+		margin: 100px 0;
+		text-align: center;
+		font-size: 26px;
+	}
+
+	.recent {
+		width: 100%;
+		
+		.r-header {
+			font-size: 18px;
+		}
+
+		.r-photo {
+			width: 100%;
+			margin-top: 20px;
+		}
+		
+		.r-photo-footer {
+			margin-top: 5px;
+			font-size: 16px;
+			display: -webkit-flex;
+			display: flex;
+			padding: 0 5px;
+
+			.date {
+				-webkit-flex: auto;
+				flex: auto;
+			}
+
+			.good-box {
+			}
+		}
+
+		.post-box {
+			margin-top: 20px;
+			// background: red;
+			
+			.post-heading {
+				height: 40px;
+				vertical-align: center;
+
+				.post-title {
+					font-size: 18px;
+				}
+				.post-icon {
+					// display: inline-block;
+					margin-left: 20px;
+					width: 25px;
+					height: 25px;
+				}
+				.post-name {
+					// background: green;
+					margin-left: 10px;
+				}
+			}
+			.post-content {
+				font-size: 14px;
+				line-height: 1.2em;
+				margin-top:10px;
+			}
+		}
+		.comment-box {
+			margin-top: 30px;
+			display: -webkit-flex;
+			display: flex;
+
+			.commnet-heading {
+				-webkit-flex: auto;
+				flex: auto;
+			}
+			.commentBtn-box {
+
+				.commentBtn {
+					font-size: 14px;
+				}
+			}
+
+			#commentbox{
+				display: none;
+				position: fixed;
+				padding: 20px;
+				background-color: rgba(251, 250, 246, 0.9);
+				border: 2px solid rgba(62, 61, 56, 0.7);
+				border-radius: 15px;
+				bottom: 10%;
+				right: 10%;
+				z-index: 990;
+
+				.comment_closeBtn{
+					width: 20px;
+					background-color: #3e3d38;
+					height: 20px;
+					padding: 0px 5px 9px 5px;
+					font-size: 25px;
+					text-align: center;
+					border-radius: 20px;
+					color: rgb(251, 250, 246);
+					float: right;
+				}
+
+				p{
+					margin-bottom: 5px;
+					margin-top: 15px;
+				}
+			}
+
+		}
+	}
+}

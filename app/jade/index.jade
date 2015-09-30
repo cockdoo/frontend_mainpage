@@ -27,6 +27,28 @@ html
           iframe(src="http://www.gigapan.com/embeds/5we8Fv9bl5k/", frameborder="false")
         a
           img(src="/images/top_Path1.png")
-      section#information インフォメーションの中身
+      section#information
+        .itext
+          p よこめとは、
+          p 新潟県魚沼市横根集落が
+          p まちをあげて育ているお米です。
+          .bgr
+        .yokoneVR
+          .map
+            img(src="images/nigata_map.png")
+          .yokone
+            p 新潟県魚沼市横根集落
+          img(src="images/VR.png" class="VR")
+        .scroll
+          a(href="#person")
+            img(src="images/scroll.svg")
+      section#person パーソンの中身
+      section#footer
+        .copy
+          p Copyright 2015 Shiori.Inc. All Rights Reserved.
+      //- JS
+      script(src="js/min/jquery-2.1.4.min.js")
+      script(type="text/javascript" src="js/min/index.min.js")
+
       section#person パーソンの中身
 //- 作成したコードを該当するセクションの下に貼付ける(インデントを一つあげる)

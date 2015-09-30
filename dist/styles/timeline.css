@@ -1,7 +1,8 @@
 #timeline {
   position: relative;
   height: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  color: #404040; }
   #timeline .tl-inner {
     max-width: 900px;
     margin: 0 auto;
@@ -11,8 +12,9 @@
     text-align: center;
     font-size: 26px; }
   #timeline .recent {
-    width: 100%; }
-    #timeline .recent .r-header {
+    width: 100%;
+    padding-bottom: 40px; }
+    #timeline .recent h2 {
       font-size: 18px; }
     #timeline .recent .r-photo {
       width: 100%;
@@ -75,3 +77,24 @@
       margin-top: 10px;
       text-align: right;
       font-size: 12px; }
+  #timeline .this-year .years {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    margin-top: 30px; }
+    #timeline .this-year .years li {
+      list-style: none;
+      -webkit-flex: auto;
+      flex: auto;
+      text-align: center;
+      line-height: 30px;
+      color: #888;
+      margin: 0 70px; }
+    #timeline .this-year .years .selected {
+      font-size: 18px;
+      font-weight: bold;
+      color: #404040;
+      border-bottom: 1px solid #404040; }
+  #timeline .this-year .tree {
+    height: 100px; }

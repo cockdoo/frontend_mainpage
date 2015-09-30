@@ -3,6 +3,7 @@
 	position: relative;
 	height: 100%;
 	background-color: #fff;
+	color: #404040;
 
 	.tl-inner {
 		max-width: 900px;
@@ -18,8 +19,9 @@
 
 	.recent {
 		width: 100%;
+		padding-bottom: 40px;
 		
-		.r-header {
+		h2 {
 			font-size: 18px;
 		}
 
@@ -123,6 +125,35 @@
 			margin-top: 10px;
 			text-align: right;
 			font-size: 12px;
+		}
+	}
+	.this-year {
+
+		.years {
+			width: 600px;
+			margin: 0 auto;
+			display: flex;
+			display: -webkit-flex;
+			margin-top: 30px;
+
+			li {
+				list-style: none;
+				-webkit-flex: auto;
+				flex: auto;
+				text-align: center;
+				line-height: 30px;
+				color: #888;
+				margin: 0 70px;
+			}
+			.selected {
+				font-size: 18px;
+				font-weight: bold;
+				color: #404040;
+				border-bottom: 1px solid #404040;
+			}
+		}
+		.tree {
+			height: 100px;
 		}
 	}
 }

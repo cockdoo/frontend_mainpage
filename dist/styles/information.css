@@ -1,0 +1,41 @@
+#information {
+  position: relative;
+  height: 100%;
+  background-color: #fff; }
+  #information .itext {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 100; }
+  #information .itext p {
+    text-align: center;
+    color: #000;
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 26px; }
+  #information .map {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 30%;
+    height: auto; }
+  #information .map img {
+    width: 100%;
+    height: 100%; }
+  #information .yokone {
+    position: absolute;
+    right: 30px;
+    bottom: 30px; }
+  #information .yokone p {
+    color: #fff;
+    font-size: 36px; }
+  #information .scroll {
+    position: absolute;
+    width: 70px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer; }

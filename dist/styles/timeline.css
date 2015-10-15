@@ -2,11 +2,11 @@
   position: relative;
   background-color: #fff;
   color: #404040; }
-  #timeline .tl-inner {
+  #timeline .contaner {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 50px; }
-  #timeline .tl-header {
+  #timeline h1 {
     margin: 100px 0;
     text-align: center;
     font-size: 26px; }
@@ -15,7 +15,7 @@
     padding-bottom: 40px; }
     #timeline .recent h2 {
       font-size: 18px; }
-    #timeline .recent .r-photo {
+    #timeline .recent .photo {
       width: 100%;
       margin-top: 20px; }
     #timeline .recent .r-photo-footer {

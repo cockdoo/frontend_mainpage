@@ -15,16 +15,16 @@
     padding-bottom: 40px; }
     #timeline .recent h2 {
       font-size: 18px; }
-    #timeline .recent .photo {
+    #timeline .recent .photo-box .photo {
       width: 100%;
       margin-top: 20px; }
-    #timeline .recent .r-photo-footer {
+    #timeline .recent .photo-box .r-photo-footer {
       margin-top: 5px;
       font-size: 16px;
       display: -webkit-flex;
       display: flex;
       padding: 0 5px; }
-      #timeline .recent .r-photo-footer .date {
+      #timeline .recent .photo-box .r-photo-footer .date {
         -webkit-flex: auto;
         flex: auto; }
     #timeline .recent .post-box {

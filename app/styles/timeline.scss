@@ -23,25 +23,25 @@
 		h2 {
 			font-size: 18px;
 		}
+		.photo-box {
 
-		.photo {
-			width: 100%;
-			margin-top: 20px;
-		}
-		
-		.r-photo-footer {
-			margin-top: 5px;
-			font-size: 16px;
-			display: -webkit-flex;
-			display: flex;
-			padding: 0 5px;
-
-			.date {
-				-webkit-flex: auto;
-				flex: auto;
+			.photo {
+				width: 100%;
+				margin-top: 20px;
 			}
+			.r-photo-footer {
+				margin-top: 5px;
+				font-size: 16px;
+				display: -webkit-flex;
+				display: flex;
+				padding: 0 5px;
 
-			.good-box {
+				.date {
+					-webkit-flex: auto;
+					flex: auto;
+				}
+				.good-box {
+				}
 			}
 		}
 
